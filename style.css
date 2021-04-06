@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black: #000;
+  --secondary-btn: tranparent;
+  --btn-border: 1px solid #000;
+  --white: #fff;
+  --linkBlue: #0d6efd;
+  --centerAlign: center;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Prata", serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* NAVBAR */
+
+nav {
+  padding: 30px;
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+}
+
+nav ul li {
+  padding-left: 100px;
+  list-style-type: none;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+nav form button {
+  margin: 0 0 0 10px;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+/* BOTTONS */
+
+.primaryBtn,
+.primaryBtn a {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  border: var(--btn-border);
+}
+
+.secondaryBtn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* MAIN-SECTION */
+
+.heading h1 {
+  text-align: left;
+  font-weight: 500;
+}
+
+.heading .content {
+  margin: 15% 0 30px 100px;
+  line-height: 34px;
+}
+
+.img-head {
+  max-width: 50%;
+  margin-top: 70px;
+  margin-left: 20%;
+  filter: drop-shadow(12px 12px 5px rgba(0, 0, 0, 0.5));
+}
+
+/* ACCOUNT PAGE */
+
+tr a:hover {
+  color: var(--black);
+}
+
+table {
+  text-align: var(--centerAlign);
+}
+
+.data,
+.transferForm {
+  cursor: pointer;
+  text-align: var(--centerAlign);
+}
+
+.img-amount {
+  width: 100%;
+}
+.img-amt-div {
+  margin-top: 20px;
+}
+
+.breadcrumb-item a {
+  color: var(--linkBlue);
+}
+
+@media only screen and (max-width: 360px) {
+  .heading .content {
+    margin: 40px 0 30px 0;
+    text-align: var(--centerAlign);
+  }
+
+  .heading .content h1 {
+    text-align: var(--centerAlign);
+  }
+
+  .img-div {
+    margin-bottom: 10px;
+  }
+  .img-head {
+    max-width: 100%;
+    margin-top: 70px;
+    margin-left: 0%;
+  }
+  /* ACCOUNT PAGE */
+
+  table {
+    text-align: var(--centerAlign);
+  }
+
+  .data,
+  .transferForm {
+    cursor: pointer;
+    text-align: var(--centerAlign);
+  }
+}
